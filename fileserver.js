@@ -3,9 +3,7 @@ var app = express();
 var mongojs = require('mongojs');
 var db = mongojs('contactlist',['contactlist']);
 var bodyParser = require("body-parser");
-//app.get('/',function(request,response){
-//	response.send("Hello world from server.js")	
-//});
+
 //new york
 app.use(express.static(__dirname +"/public"));
 app.use(bodyParser.json());
@@ -32,5 +30,5 @@ app.delete('/contactlist/:id',function(req,res){
 	});
 });
 
-app.listen(3000);
-console.log("Server running part 3000")
+//app.listen(3000);
+//console.log("Server running part 3000")

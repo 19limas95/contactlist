@@ -30,5 +30,5 @@ app.delete('/contactlist/:id',function(req,res){
 	});
 });
 
-//app.listen(3000);
-//console.log("Server running part 3000")
+app.listen(3000);
+console.log("Server running part 3000")
